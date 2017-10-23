@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33EB9E4C91DFBB4A8B87DC06 /* Pods_Listening.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 940FD9755B92512E63A23CF2 /* Pods_Listening.framework */; };
 		6C67FE9B1F9CA35100C803B6 /* SignInCloudViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C67FE9A1F9CA35100C803B6 /* SignInCloudViewModel.swift */; };
 		6C67FE9D1F9CA37100C803B6 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C67FE9C1F9CA37100C803B6 /* Dynamic.swift */; };
 		6C67FE9F1F9CB44300C803B6 /* ListFilesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C67FE9E1F9CB44300C803B6 /* ListFilesViewModel.swift */; };
@@ -60,6 +61,9 @@
 		6C67FED51F9CCE0E00C803B6 /* AuthenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenViewController.swift; sourceTree = "<group>"; };
 		6C67FEDC1F9CCE5C00C803B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6C67FEDE1F9CCE8400C803B6 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		844F5FB4A95800F354E35D42 /* Pods-Listening.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Listening.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Listening/Pods-Listening.debug.xcconfig"; sourceTree = "<group>"; };
+		940FD9755B92512E63A23CF2 /* Pods_Listening.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Listening.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D26382D144273AB51F7B6F08 /* Pods-Listening.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Listening.release.xcconfig"; path = "Pods/Target Support Files/Pods-Listening/Pods-Listening.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,17 +71,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33EB9E4C91DFBB4A8B87DC06 /* Pods_Listening.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		528F524A51DE001B700DAE91 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				844F5FB4A95800F354E35D42 /* Pods-Listening.debug.xcconfig */,
+				D26382D144273AB51F7B6F08 /* Pods-Listening.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6C67FE601F9C92B100C803B6 = {
 			isa = PBXGroup;
 			children = (
 				6C67FE811F9C93F000C803B6 /* Listening */,
 				6C67FE6A1F9C92B100C803B6 /* Products */,
+				528F524A51DE001B700DAE91 /* Pods */,
+				FE9A0857795EE552F9EBA192 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -235,6 +251,14 @@
 			path = Manager;
 			sourceTree = "<group>";
 		};
+		FE9A0857795EE552F9EBA192 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				940FD9755B92512E63A23CF2 /* Pods_Listening.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -242,9 +266,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6C67FE7E1F9C92B100C803B6 /* Build configuration list for PBXNativeTarget "Listening" */;
 			buildPhases = (
+				B29D2D564C3783CFF81EC5F3 /* [CP] Check Pods Manifest.lock */,
 				6C67FE651F9C92B100C803B6 /* Sources */,
 				6C67FE661F9C92B100C803B6 /* Frameworks */,
 				6C67FE671F9C92B100C803B6 /* Resources */,
+				FC673332744D7232D98B41C3 /* [CP] Embed Pods Frameworks */,
+				614DEAB24A025E5A57B3797F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -300,6 +327,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		614DEAB24A025E5A57B3797F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Listening/Pods-Listening-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B29D2D564C3783CFF81EC5F3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FC673332744D7232D98B41C3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Listening/Pods-Listening-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6C67FE651F9C92B100C803B6 /* Sources */ = {
@@ -461,12 +536,13 @@
 		};
 		6C67FE7F1F9C92B100C803B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 844F5FB4A95800F354E35D42 /* Pods-Listening.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3ESZLRY25L;
-				INFOPLIST_FILE = Listening/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Listening/Resource/Info/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mingle.Listening;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -478,12 +554,13 @@
 		};
 		6C67FE801F9C92B100C803B6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D26382D144273AB51F7B6F08 /* Pods-Listening.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3ESZLRY25L;
-				INFOPLIST_FILE = Listening/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Listening/Resource/Info/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mingle.Listening;
 				PRODUCT_NAME = "$(TARGET_NAME)";
